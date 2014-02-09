@@ -19,6 +19,7 @@
 		A2A1B6A618A7EEF300B8D9EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A1B68E18A7EEF200B8D9EE /* UIKit.framework */; };
 		A2A1B6AE18A7EEF300B8D9EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2A1B6AC18A7EEF300B8D9EE /* InfoPlist.strings */; };
 		A2A1B6B018A7EEF300B8D9EE /* _2BlocksTestHW02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1B6AF18A7EEF300B8D9EE /* _2BlocksTestHW02Tests.m */; };
+		A2A1B6BB18A7F04400B8D9EE /* RITStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1B6BA18A7F04400B8D9EE /* RITStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		A2A1B6AB18A7EEF300B8D9EE /* 12BlocksTestHW02Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "12BlocksTestHW02Tests-Info.plist"; sourceTree = "<group>"; };
 		A2A1B6AD18A7EEF300B8D9EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2A1B6AF18A7EEF300B8D9EE /* _2BlocksTestHW02Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _2BlocksTestHW02Tests.m; sourceTree = "<group>"; };
+		A2A1B6B918A7F04400B8D9EE /* RITStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RITStudent.h; path = ../RITStudent.h; sourceTree = "<group>"; };
+		A2A1B6BA18A7F04400B8D9EE /* RITStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RITStudent.m; path = ../RITStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		A2A1B69018A7EEF200B8D9EE /* 12BlocksTestHW02 */ = {
 			isa = PBXGroup;
 			children = (
+				A2A1B6B918A7F04400B8D9EE /* RITStudent.h */,
+				A2A1B6BA18A7F04400B8D9EE /* RITStudent.m */,
 				A2A1B69918A7EEF300B8D9EE /* RITAppDelegate.h */,
 				A2A1B69A18A7EEF300B8D9EE /* RITAppDelegate.m */,
 				A2A1B69C18A7EEF300B8D9EE /* Images.xcassets */,
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A1B69B18A7EEF300B8D9EE /* RITAppDelegate.m in Sources */,
+				A2A1B6BB18A7F04400B8D9EE /* RITStudent.m in Sources */,
 				A2A1B69718A7EEF300B8D9EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

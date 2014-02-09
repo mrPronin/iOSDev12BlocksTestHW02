@@ -7,6 +7,7 @@
 //
 
 #import "RITAppDelegate.h"
+#import "RITStudent.h"
 
 @implementation RITAppDelegate
 
@@ -16,6 +17,69 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // create objects
+    RITStudent* student01   = [[RITStudent alloc] init];
+    RITStudent* student02   = [[RITStudent alloc] init];
+    RITStudent* student03   = [[RITStudent alloc] init];
+    RITStudent* student04   = [[RITStudent alloc] init];
+    RITStudent* student05   = [[RITStudent alloc] init];
+    RITStudent* student06   = [[RITStudent alloc] init];
+    RITStudent* student07   = [[RITStudent alloc] init];
+    RITStudent* student08   = [[RITStudent alloc] init];
+    RITStudent* student09   = [[RITStudent alloc] init];
+    RITStudent* student10   = [[RITStudent alloc] init];
+    
+    // initialize properties
+    student01.name      = @"Lex";
+    student02.name      = @"Conrad";
+    student03.name      = @"Alan";
+    student04.name      = @"Alex";
+    student05.name      = @"Amos";
+    student06.name      = @"Bart";
+    student07.name      = @"Ben";
+    student08.name      = @"Bill";
+    student09.name      = @"Bob";
+    student10.name      = @"Jim";
+    
+    student01.lastName  = @"Smith";
+    student02.lastName  = @"Johnson";
+    student03.lastName  = @"Brown";
+    student04.lastName  = @"Brown";
+    student05.lastName  = @"Moore";
+    student06.lastName  = @"Robinson";
+    student07.lastName  = @"King";
+    student08.lastName  = @"Scott";
+    student09.lastName  = @"Evans";
+    student10.lastName  = @"Bell";
+    
+    NSArray*    students    = @[
+                                student01, student02, student03,
+                                student04, student05, student06,
+                                student07, student08, student09,
+                                student10,
+                                ];
+    
+    NSComparisonResult (^sortingBlock)(id, id) = ^(id obj01, id obj02) {
+        
+        NSString*   name01      = [obj01 name];
+        NSString*   name02      = [obj02 name];
+        NSString*   lastName01  = [obj01 lastName];
+        NSString*   lastName02  = [obj02 lastName];
+        
+        if ([lastName01 isEqualToString:lastName02]) {
+            return [name01 compare:name02];
+        } else {
+            return [lastName01 compare:lastName02];
+        }
+        
+        return NSOrderedAscending;
+    };
+    
+    NSArray*    sortedStudents  = [students sortedArrayUsingComparator:sortingBlock];
+    
+    NSLog(@"%@", sortedStudents);
+    
     return YES;
 }
 
